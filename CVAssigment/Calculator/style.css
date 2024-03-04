@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(148, 140, 140);
+}
+
+.calculator {
+  background-color:   #ccb1b1;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.result-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#result {
+  flex: 1;
+  margin-right: 10px;
+  padding: 9px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-align: right;
+  color: #000;
+}
+
+.special {
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #28a745; /* Green color for AC button */
+  color: #fff;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+button.operator {
+  background-color: #000;
+}
+
+button:hover {
+  background-color: #333;
+}
